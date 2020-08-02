@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    color: #eee;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.content {
+    max-width: 55rem;
+    width: 35vw;
+    margin: 2rem auto;
+    text-align: center;
+    background-color: #000;
+    padding: 3rem;
+    box-shadow: 0 0 15px black;
+}
+
+#toDo-list {
+    list-style: none;
+    margin: 2rem 0;
+    text-align: left;
+    color: #222;
+}
+
+#toDo-list li {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    font-size: 1.25rem;
+    font-weight: 100;
+}
+
+li div {
+    opacity: 0;
+    transition: all .4s;
+}
+
+#toDo-list li a {
+    margin: 1rem;
+}
+
+.complete {
+    color: rgb(44, 172, 44);
+}
+.delete {
+    color: rgb(180, 21, 21);
+}
+
+#toDo-list li a:hover {
+    cursor: pointer;
+}
+
+#toDo-list li:nth-of-type(even) {
+    background-color: #fff;
+}
+
+#toDo-list li:nth-of-type(odd) {
+    background-color: #ddd;
+}
+
+#toDo-list li.completed {
+    color: #fff;
+    background-color: rgb(44, 172, 44);
+    transition: all .6s;
+}
+
+#new-task {
+    padding: .5rem 1rem;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 1.1rem;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 300;
+}
+
+#new-task::placeholder {
+    color: #fff;
+    font-weight: 100;
+}
+
+#new-task:focus {
+    outline: transparent;
+}
+
+#add {
+    padding: .5rem 2rem;
+    font-size: 1.1rem;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 2rem;
+    border-radius: 5px;
+}
+
+#add:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.185);
+    transition: all .6s;
+}
+
